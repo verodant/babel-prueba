@@ -1,0 +1,23 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-modules-systemjs": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "build2": "babel --plugins @babel/plugin-transform-runtime script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.2.0",
+    "systemjs": "^2.1.1"
+  }
+}
